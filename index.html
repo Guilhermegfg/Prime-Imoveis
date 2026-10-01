@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prime Imóveis — imóveis selecionados em Goiânia com atendimento consultivo, curadoria premium e contato direto pelo WhatsApp.">
+  <meta name="keywords" content="imóveis Goiânia, apartamentos Goiânia, casas Goiânia, imóveis de luxo, corretor Goiânia">
+  <meta name="author" content="GFGTech">
+  <meta name="theme-color" content="#10233F">
+  <title>Prime Imóveis | Imóveis selecionados em Goiânia</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Prime Imóveis - início">
+        <span class="brand-mark">P</span>
+        <span class="brand-copy"><strong>PRIME</strong><small>IMÓVEIS</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#imoveis">Imóveis</a>
+        <a href="#bairros">Bairros</a>
+        <a href="#sobre">Corretor</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="https://wa.me/5562998230185?text=Olá!%20Vi%20o%20site%20da%20Prime%20Imóveis%20e%20quero%20encontrar%20um%20imóvel." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">CURADORIA IMOBILIÁRIA • GOIÂNIA</span>
+          <h1>O imóvel certo muda mais do que o seu endereço.</h1>
+          <p>Encontre apartamentos, casas e imóveis selecionados com atendimento consultivo, negociação transparente e foco no que realmente combina com a sua próxima fase.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#imoveis">Explorar imóveis <span>→</span></a>
+            <a class="btn btn-ghost" href="https://wa.me/5562998230185?text=Olá!%20Quero%20uma%20seleção%20personalizada%20de%20imóveis." target="_blank" rel="noopener">Receber seleção personalizada</a>
+          </div>
+          <div class="hero-proof">
+            <div><strong data-counter="120">0</strong><span>imóveis analisados</span></div>
+            <div><strong data-counter="8">0</strong><span>bairros em destaque</span></div>
+            <div><strong data-counter="48">0</strong><span>h para primeira curadoria</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal delay-1">
+          <span class="hero-card-label">DESTAQUE DA SEMANA</span>
+          <div class="hero-card-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Casa contemporânea de alto padrão">
+            <span class="badge">Exclusivo</span>
+          </div>
+          <div class="hero-card-content">
+            <div>
+              <small>Jardins Munique • Goiânia</small>
+              <h2>Casa contemporânea com lazer completo</h2>
+            </div>
+            <strong>R$ 2.890.000</strong>
+            <div class="property-meta">
+              <span>4 suítes</span><span>312 m²</span><span>4 vagas</span>
+            </div>
+            <a href="https://wa.me/5562998230185?text=Olá!%20Tenho%20interesse%20na%20casa%20em%20Jardins%20Munique%20de%20R$%202.890.000." target="_blank" rel="noopener">Quero conhecer este imóvel →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-panel-wrap">
+        <form class="search-panel container reveal delay-2" id="searchForm">
+          <div class="field">
+            <label for="typeFilter">Tipo de imóvel</label>
+            <select id="typeFilter">
+              <option value="todos">Todos</option>
+              <option value="apartamento">Apartamento</option>
+              <option value="casa">Casa</option>
+              <option value="cobertura">Cobertura</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="neighborhoodFilter">Bairro</label>
+            <select id="neighborhoodFilter">
+              <option value="todos">Todos os bairros</option>
+              <option value="setor-marista">Setor Marista</option>
+              <option value="setor-bueno">Setor Bueno</option>
+              <option value="jardins-munique">Jardins Munique</option>
+              <option value="jardim-goias">Jardim Goiás</option>
+              <option value="alphaville">Alphaville Flamboyant</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="priceFilter">Faixa de valor</label>
+            <select id="priceFilter">
+              <option value="todos">Qualquer valor</option>
+              <option value="ate800">Até R$ 800 mil</option>
+              <option value="800a1500">R$ 800 mil a R$ 1,5 mi</option>
+              <option value="acima1500">Acima de R$ 1,5 mi</option>
+            </select>
+          </div>
+          <button class="btn btn-primary search-btn" type="submit">Buscar imóveis</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span>✓</span><p><strong>Curadoria real</strong><small>Menos volume, mais aderência ao seu perfil.</small></p></div>
+        <div><span>✓</span><p><strong>Negociação assistida</strong><small>Apoio do primeiro contato até a proposta.</small></p></div>
+        <div><span>✓</span><p><strong>Atendimento ágil</strong><small>Contato direto, sem burocracia desnecessária.</small></p></div>
+        <div><span>✓</span><p><strong>Visão de investimento</strong><small>Análise de localização, liquidez e potencial.</small></p></div>
+      </div>
+    </section>
+
+    <section class="section properties-section" id="imoveis">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow dark">IMÓVEIS SELECIONADOS</span>
+            <h2>Escolhas para morar bem e investir melhor.</h2>
+          </div>
+          <p>Uma seleção fictícia criada para demonstrar como uma imobiliária pode apresentar imóveis com clareza, sofisticação e foco em conversão.</p>
+        </div>
+
+        <div class="filter-chips reveal">
+          <button class="chip active" data-chip="todos">Todos</button>
+          <button class="chip" data-chip="apartamento">Apartamentos</button>
+          <button class="chip" data-chip="casa">Casas</button>
+          <button class="chip" data-chip="cobertura">Coberturas</button>
+        </div>
+
+        <div class="properties-grid" id="propertiesGrid">
+          <article class="property-card reveal" data-type="apartamento" data-neighborhood="setor-marista" data-price="1290000">
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=82" alt="Apartamento sofisticado no Setor Marista" loading="lazy">
+              <div class="property-tags"><span>Novo</span><span>Marista</span></div>
+              <button class="favorite" aria-label="Favoritar imóvel">♡</button>
+            </div>
+            <div class="property-body">
+              <small>Setor Marista • Goiânia</small>
+              <h3>Apartamento Prime Residence</h3>
+              <p>Ambientes integrados, varanda gourmet e projeto contemporâneo a poucos minutos dos principais restaurantes da região.</p>
+              <div class="property-specs"><span>3 suítes</span><span>168 m²</span><span>3 vagas</span></div>
+              <div class="property-footer"><strong>R$ 1.290.000</strong><a href="https://wa.me/5562998230185?text=Olá!%20Quero%20mais%20detalhes%20do%20Apartamento%20Prime%20Residence%20no%20Setor%20Marista." target="_blank" rel="noopener">Ver detalhes →</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal delay-1" data-type="apartamento" data-neighborhood="setor-bueno" data-price="745000">
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=82" alt="Apartamento moderno no Setor Bueno" loading="lazy">
+              <div class="property-tags"><span>Oportunidade</span><span>Bueno</span></div>
+              <button class="favorite" aria-label="Favoritar imóvel">♡</button>
+            </div>
+            <div class="property-body">
+              <small>Setor Bueno • Goiânia</small>
+              <h3>Urban View Bueno</h3>
+              <p>Planta inteligente, lazer completo e localização estratégica para quem valoriza praticidade sem abrir mão de conforto.</p>
+              <div class="property-specs"><span>2 suítes</span><span>104 m²</span><span>2 vagas</span></div>
+              <div class="property-footer"><strong>R$ 745.000</strong><a href="https://wa.me/5562998230185?text=Olá!%20Quero%20mais%20detalhes%20do%20Urban%20View%20Bueno." target="_blank" rel="noopener">Ver detalhes →</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal delay-2" data-type="casa" data-neighborhood="jardins-munique" data-price="2890000">
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=82" alt="Casa de luxo em condomínio fechado" loading="lazy">
+              <div class="property-tags"><span>Exclusivo</span><span>Munique</span></div>
+              <button class="favorite" aria-label="Favoritar imóvel">♡</button>
+            </div>
+            <div class="property-body">
+              <small>Jardins Munique • Goiânia</small>
+              <h3>Casa Horizonte</h3>
+              <p>Arquitetura marcante, piscina integrada à área gourmet e acabamentos nobres em um dos condomínios mais desejados.</p>
+              <div class="property-specs"><span>4 suítes</span><span>312 m²</span><span>4 vagas</span></div>
+              <div class="property-footer"><strong>R$ 2.890.000</strong><a href="https://wa.me/5562998230185?text=Olá!%20Quero%20mais%20detalhes%20da%20Casa%20Horizonte%20no%20Jardins%20Munique." target="_blank" rel="noopener">Ver detalhes →</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal" data-type="cobertura" data-neighborhood="jardim-goias" data-price="1980000">
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=82" alt="Cobertura premium no Jardim Goiás" loading="lazy">
+              <div class="property-tags"><span>Vista livre</span><span>Jardim Goiás</span></div>
+              <button class="favorite" aria-label="Favoritar imóvel">♡</button>
+            </div>
+            <div class="property-body">
+              <small>Jardim Goiás • Goiânia</small>
+              <h3>Cobertura Parque Flamboyant</h3>
+              <p>Terraço privativo com vista panorâmica, sala de pé-direito generoso e localização próxima ao Parque Flamboyant.</p>
+              <div class="property-specs"><span>4 suítes</span><span>247 m²</span><span>3 vagas</span></div>
+              <div class="property-footer"><strong>R$ 1.980.000</strong><a href="https://wa.me/5562998230185?text=Olá!%20Quero%20mais%20detalhes%20da%20Cobertura%20Parque%20Flamboyant." target="_blank" rel="noopener">Ver detalhes →</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal delay-1" data-type="casa" data-neighborhood="alphaville" data-price="3650000">
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=82" alt="Residência de alto padrão em Alphaville" loading="lazy">
+              <div class="property-tags"><span>Alto padrão</span><span>Alphaville</span></div>
+              <button class="favorite" aria-label="Favoritar imóvel">♡</button>
+            </div>
+            <div class="property-body">
+              <small>Alphaville Flamboyant • Goiânia</small>
+              <h3>Residência Aurora</h3>
+              <p>Projeto autoral com integração total entre living, gourmet e jardim, além de automação e excelente iluminação natural.</p>
+              <div class="property-specs"><span>5 suítes</span><span>428 m²</span><span>5 vagas</span></div>
+              <div class="property-footer"><strong>R$ 3.650.000</strong><a href="https://wa.me/5562998230185?text=Olá!%20Quero%20mais%20detalhes%20da%20Residência%20Aurora%20no%20Alphaville." target="_blank" rel="noopener">Ver detalhes →</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal delay-2" data-type="apartamento" data-neighborhood="jardim-goias" data-price="980000">
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=82" alt="Apartamento no Jardim Goiás" loading="lazy">
+              <div class="property-tags"><span>Pronto para morar</span><span>Jardim Goiás</span></div>
+              <button class="favorite" aria-label="Favoritar imóvel">♡</button>
+            </div>
+            <div class="property-body">
+              <small>Jardim Goiás • Goiânia</small>
+              <h3>Parque Living 360</h3>
+              <p>Conforto, vista urbana e áreas comuns sofisticadas em uma região conectada aos principais pontos da cidade.</p>
+              <div class="property-specs"><span>3 quartos</span><span>139 m²</span><span>2 vagas</span></div>
+              <div class="property-footer"><strong>R$ 980.000</strong><a href="https://wa.me/5562998230185?text=Olá!%20Quero%20mais%20detalhes%20do%20Parque%20Living%20360." target="_blank" rel="noopener">Ver detalhes →</a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <span>⌂</span>
+          <h3>Nenhum imóvel encontrado com esses filtros.</h3>
+          <p>Experimente ampliar a busca ou fale conosco para receber uma seleção personalizada.</p>
+          <a class="btn btn-primary" href="https://wa.me/5562998230185?text=Olá!%20Não%20encontrei%20o%20que%20procuro%20no%20site.%20Pode%20montar%20uma%20seleção%20personalizada%20para%20mim?" target="_blank" rel="noopener">Pedir curadoria</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section neighborhoods" id="bairros">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <div>
+            <span class="eyebrow">LOCALIZAÇÃO IMPORTA</span>
+            <h2>Bairros que conectam estilo de vida e valorização.</h2>
+          </div>
+          <p>Explore regiões ficticiamente destacadas na curadoria da Prime Imóveis para diferentes perfis de moradia e investimento.</p>
+        </div>
+        <div class="neighborhood-grid">
+          <article class="neighborhood-card large reveal">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=82" alt="Vista urbana moderna" loading="lazy">
+            <div><span>01</span><h3>Setor Marista</h3><p>Gastronomia, serviços premium e vida urbana sofisticada.</p></div>
+          </article>
+          <article class="neighborhood-card reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=82" alt="Condomínio residencial arborizado" loading="lazy">
+            <div><span>02</span><h3>Jardins</h3><p>Privacidade, segurança e casas de alto padrão.</p></div>
+          </article>
+          <article class="neighborhood-card reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=82" alt="Edifícios residenciais modernos" loading="lazy">
+            <div><span>03</span><h3>Jardim Goiás</h3><p>Vista, lazer e proximidade ao Parque Flamboyant.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section consultant" id="sobre">
+      <div class="container consultant-grid">
+        <div class="consultant-image reveal">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1000&q=82" alt="Corretor imobiliário fictício da Prime Imóveis" loading="lazy">
+          <div class="floating-note">
+            <span>ATENDIMENTO CONSULTIVO</span>
+            <strong>Seu objetivo primeiro.<br>O imóvel depois.</strong>
+          </div>
+        </div>
+        <div class="consultant-copy reveal delay-1">
+          <span class="eyebrow dark">QUEM VAI TE ACOMPANHAR</span>
+          <h2>Mais do que abrir portas: ajudar você a escolher melhor.</h2>
+          <p>Na Prime Imóveis, o atendimento começa entendendo rotina, prioridades, momento financeiro e planos futuros. A partir disso, a busca fica mais precisa e cada visita passa a fazer sentido.</p>
+          <p class="signature">André Monteiro <small>Corretor fictício • CRECI demonstrativo 00000-F</small></p>
+          <div class="consultant-points">
+            <div><strong>01</strong><span>Entendimento do perfil</span></div>
+            <div><strong>02</strong><span>Curadoria de opções</span></div>
+            <div><strong>03</strong><span>Visitas objetivas</span></div>
+            <div><strong>04</strong><span>Suporte na negociação</span></div>
+          </div>
+          <a class="btn btn-dark" href="https://wa.me/5562998230185?text=Olá!%20Quero%20conversar%20sobre%20o%20tipo%20de%20imóvel%20que%20estou%20procurando." target="_blank" rel="noopener">Conversar sobre meu perfil <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey">
+      <div class="container">
+        <div class="journey-card reveal">
+          <div>
+            <span class="eyebrow">SEU PRÓXIMO IMÓVEL COMEÇA AQUI</span>
+            <h2>Conte o que você procura. A gente transforma isso em uma seleção objetiva.</h2>
+          </div>
+          <form id="leadForm" class="lead-form">
+            <input id="leadName" type="text" placeholder="Seu nome" required>
+            <select id="leadGoal" required>
+              <option value="">Objetivo</option>
+              <option>Comprar para morar</option>
+              <option>Comprar para investir</option>
+              <option>Buscar imóvel de alto padrão</option>
+            </select>
+            <select id="leadBudget" required>
+              <option value="">Faixa de investimento</option>
+              <option>Até R$ 800 mil</option>
+              <option>R$ 800 mil a R$ 1,5 mi</option>
+              <option>R$ 1,5 mi a R$ 3 mi</option>
+              <option>Acima de R$ 3 mi</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#inicio">
+          <span class="brand-mark">P</span>
+          <span class="brand-copy"><strong>PRIME</strong><small>IMÓVEIS</small></span>
+        </a>
+        <p>Imobiliária fictícia de demonstração criada para apresentar uma experiência digital premium para corretores e imobiliárias.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="#imoveis">Imóveis</a>
+        <a href="#bairros">Bairros</a>
+        <a href="#sobre">Corretor</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="https://wa.me/5562998230185" target="_blank" rel="noopener">WhatsApp: (62) 9 9823-0185</a>
+        <a href="https://www.instagram.com/gfgtech14/" target="_blank" rel="noopener">Instagram: @gfgtech14</a>
+        <span>Goiânia • Goiás</span>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <span>Segunda a sexta: 08h às 18h</span>
+        <span>Sábado: 09h às 13h</span>
+        <a href="https://wa.me/5562998230185?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar conversa →</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Prime Imóveis. Projeto demonstrativo.</span>
+      <a href="https://www.instagram.com/gfgtech14/" target="_blank" rel="noopener">Desenvolvido por GFGTech</a>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5562998230185?text=Olá!%20Vi%20o%20site%20da%20Prime%20Imóveis." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <span>WA</span>
+    <small>Fale agora</small>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
